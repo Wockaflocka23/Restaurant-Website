@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of India</title>
+    <link rel="stylesheet" href="style.css"> 
+    <img src="./restaurant.frontpage.png" alt="" class="s">
+</head>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        target.scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
+</script>
+
+<body>
+    <header>
+        <nav>
+            <h1>Taste of India</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header>
+    <nav>
+        <h1>Taste of India</h1>
+        <ul>
+            <li><a href="menu.html">Menu</a></li> <!-- Leads to a new page -->
+            <li><a href="#about">About Us</a></li> <!-- Scrolls down -->
+            <li><a href="#contact">Contact</a></li> <!-- Scrolls down -->
+        </ul>
+    </nav>
+</header>
+
+
+    <section id="home">
+        <h2>Welcome to Taste of India</h2>
+        <p>Experience the rich flavors of authentic Indian cuisine.</p>
+    </section>
+
+
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Serving authentic Indian cuisine with love and passion.</p>
+        <img src="./aboutUs page restaurant.png" alt="" srcset="">
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <h1>Tel:9555771795</h1>
+        <h1>Addrress:Dwarka,Delhi,110037</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+   
+
+
+</body>
+</html>

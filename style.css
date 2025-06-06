@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Dark Theme Colors */
+body {
+    background-color: #121212; /* Deep dark background */
+    color: #f5f5f5; /* Light text */
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background: #1f1f1f; /* Dark navbar */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav h1 {
+    color: #ff9800; /* Warm Indian accent color */
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9800; /* Highlight effect */
+}
+
+/* Hero Section */
+#home {
+    text-align: center;
+    padding: 150px 20px 80px; /* Offset for fixed navbar */
+}
+
+#home h2 {
+    font-size: 32px;
+    color: #ff9800;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+/* Menu Section */
+#menu {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.menu-category {
+    background: #1c1c1c;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.menu-category h3 {
+    color: #ff9800;
+    font-size: 24px;
+}
+
+/* Contact & About Sections */
+#about, #contact {
+    padding: 100px 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+#contact input, #contact button {
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+}
+
+#contact input {
+    background: #333;
+    color: #fff;
+}
+
+#contact button {
+    background: #ff9800;
+    color: #121212;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background: #e68900;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #1f1f1f;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
